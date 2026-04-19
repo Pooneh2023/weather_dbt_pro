@@ -1,4 +1,4 @@
 SELECT *
 FROM {{source('flights_data','AIRPORTS')}} 
-LEFT JOIN {{source('flight_data','REGIONS')}} 
-using country 
+LEFT JOIN {{source('flights_data','REGIONS')}} 
+USING (country) 
