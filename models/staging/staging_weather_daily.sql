@@ -28,4 +28,4 @@ FROM
 SELECT
 	*
 FROM
-	extracted_weather_data;
+	extracted_weather_data
