@@ -5,7 +5,7 @@ SELECT
 	station_id,
 	json_array_elements (extracted_data -> 'data') AS json_data
 FROM
-	{{source ('weather_data','weather_daily_raw'}}
+	{{source ('weather_data','weather_daily_raw')}}
 ),
 extracted_weather_data AS (
 SELECT
