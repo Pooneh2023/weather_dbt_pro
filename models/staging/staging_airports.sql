@@ -5,8 +5,7 @@ SELECT
 FROM
 	{{source ( 'flights_data','airports')}}
 LEFT JOIN {{source ('flights_data','regions')}} 
-ON
-	airports.COUNTRY = regions.COUNTRY 
+using country
 )
 SELECT
 	*
