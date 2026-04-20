@@ -1,3 +1,5 @@
+{{config (materialize='table')}}
+
 WITH category_clean AS(
 SELECT
 	categoryid::integer AS category_id,
