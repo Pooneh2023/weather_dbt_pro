@@ -5,7 +5,7 @@ SELECT
 	description:: varchar(255) AS cat_descriptoin,
 	picture AS cat_pic
 FROM
-	{{source('northwild_data','northwind.categories')}}
+	{{source('northwild_data','categories')}}
 	)
 	SELECT *
 	FROM category_clean
