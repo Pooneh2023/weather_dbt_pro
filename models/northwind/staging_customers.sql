@@ -20,7 +20,7 @@ WITH phone_cleaning AS (
             ELSE 
                 REGEXP_REPLACE(fax, '[^0-9]', '', 'g')
         END AS fax_clean
-    FROM {{source('northwind_data','customers')}}
+    FROM {{source('northwild_data','customers')}}
 )
 SELECT *
 FROM phone_cleaning
